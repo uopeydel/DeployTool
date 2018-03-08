@@ -1,0 +1,15 @@
+[Unit]
+Description=PrivateServer
+
+[Service]
+WorkingDirectory=/var/www/publish/
+ExecStart=/usr/bin/dotnet /var/www/publish/Private.Server.Api.dll
+Restart=always
+RestartSec=10
+SyslogIdentifier=dotnet-example
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
