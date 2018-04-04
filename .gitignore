@@ -7,3 +7,19 @@ DeployTools/\.vs/
 DeployTools/TCP/bin/
 
 DeployTools/TCP/obj/
+
+DeployTools/TCPSSL/TcpClientSsl/bin/
+
+DeployTools/TCPSSL/TcpClientSsl/obj/
+
+DeployTools/GenerateCert/GenCert/bin/
+
+DeployTools/GenerateCert/GenCert/obj/
+
+DeployTools/TCPSSL/TcpServerSsl/bin/
+
+DeployTools/TCPSSL/TcpServerSsl/obj/
+
+DeployTools/packages/
+
+DeployTools/GenerateCert/GenCert/Properties/

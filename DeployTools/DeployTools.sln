@@ -5,7 +5,15 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeployTools", "DeployTools\DeployTools.csproj", "{85E4D3AE-0131-479C-9C31-5F4D58F41365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP", "TCP\TCP.csproj", "{06C2B342-36B5-4F9A-AA27-73F47D96DDF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCP", "TCP\TCP.csproj", "{06C2B342-36B5-4F9A-AA27-73F47D96DDF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TCPSSL", "TCPSSL", "{5C258957-8037-4B35-B64A-86D40307D0E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClientSsl", "TCPSSL\TcpClientSsl\TcpClientSsl.csproj", "{9D8777A9-7BD7-4FF2-9DDB-DA8E34354269}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpServerSsl", "TCPSSL\TcpServerSsl\TcpServerSsl.csproj", "{F06C2811-2216-4C77-BBAA-8744C823C31E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenCert", "GenerateCert\GenCert\GenCert.csproj", "{92DC06AB-C393-4004-B4D5-E4E3EF0EEE45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,25 @@ Global
 		{06C2B342-36B5-4F9A-AA27-73F47D96DDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06C2B342-36B5-4F9A-AA27-73F47D96DDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06C2B342-36B5-4F9A-AA27-73F47D96DDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D8777A9-7BD7-4FF2-9DDB-DA8E34354269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D8777A9-7BD7-4FF2-9DDB-DA8E34354269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D8777A9-7BD7-4FF2-9DDB-DA8E34354269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D8777A9-7BD7-4FF2-9DDB-DA8E34354269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06C2811-2216-4C77-BBAA-8744C823C31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06C2811-2216-4C77-BBAA-8744C823C31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06C2811-2216-4C77-BBAA-8744C823C31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06C2811-2216-4C77-BBAA-8744C823C31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92DC06AB-C393-4004-B4D5-E4E3EF0EEE45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DC06AB-C393-4004-B4D5-E4E3EF0EEE45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DC06AB-C393-4004-B4D5-E4E3EF0EEE45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DC06AB-C393-4004-B4D5-E4E3EF0EEE45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D8777A9-7BD7-4FF2-9DDB-DA8E34354269} = {5C258957-8037-4B35-B64A-86D40307D0E3}
+		{F06C2811-2216-4C77-BBAA-8744C823C31E} = {5C258957-8037-4B35-B64A-86D40307D0E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40A0412F-8FB7-4264-8BFC-8BF99E738DA3}
